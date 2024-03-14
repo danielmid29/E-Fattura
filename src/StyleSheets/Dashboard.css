@@ -1,0 +1,331 @@
+.dashboard {
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+.dashboard-title {
+    font-size: 25px;
+    background: -webkit-linear-gradient(#AC1FCF 0%, #04A1E4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+
+
+.profile {
+    font-family: "Poppins", sans-serif;
+    background: -webkit-linear-gradient(#AC1FCF 0%, #04A1E4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile-icon {
+    font-size: 40px;
+    padding-left: 7px;
+}
+
+.dash-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dash-row.bottom {
+    height: 700px;
+}
+
+.cards-main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 28%;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    color: #6a7181;
+    margin-bottom: 5px;
+}
+
+.card.special {
+
+    background: linear-gradient(164deg, #AC1FCF 0%, #04A1E4 100%);
+    color: #FFFFFF;
+}
+
+.card-left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.card-title {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.card-detail {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #6a7181;
+    border: 2px solid #6a718142;
+}
+
+.card-icon.special {
+    background-color: transparent;
+    background: none;
+    color: #ffffff;
+    border: 2px solid #ffffff42;
+}
+
+
+.count-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7px 10px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #58687abb;
+}
+
+.branch-income {
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.branch-title {
+    display: flex;
+    justify-content: space-between;
+    color: #4f636b;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+
+.bt-l,
+.bd-l {
+    width: 50%;
+}
+
+.bt-r,
+.bd-r {
+    width: 20%;
+}
+
+
+
+.bt-m,
+.bd-m {
+    width: 30%;
+}
+
+.branch-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #818795;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+}
+
+.bd-l1 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.bd-l2 {
+    font-size: 12px;
+}
+
+.dash-time {
+    font-size: 13px;
+}
+
+.dash-rating-option {
+    border-radius: 10px;
+
+}
+
+.dash-rating-option::after {
+    background-color: #6a7181;
+}
+
+@media screen and (max-width:1335px) {
+
+    .dashboard {
+        height: 92%;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .profile.tb,
+    .profile-icon.tb {
+        display: flex;
+    }
+
+    .profile-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .card-title,
+    .branch-title {
+        font-size: 12px;
+    }
+
+    .card-detail {
+        font-size: 17.5px;
+    }
+
+    .branch-data {
+        font-size: 12px;
+    }
+
+    .bd-l1 {
+        font-size: 12px;
+    }
+
+    .bd-l2 {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+
+
+    .dashboard-title {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .card-title,
+    .branch-title {
+        font-size: 11px;
+    }
+
+    .card {
+        padding: 10px 15px;
+        height: 70px;
+        min-height: 70px;
+    }
+
+    .card-detail {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .branch-data {
+        font-size: 11px;
+    }
+
+    .bd-l1 {
+        font-size: 11px;
+    }
+
+    .bd-l2 {
+        font-size: 10px;
+    }
+
+
+    .card-icon {
+        font-size: 17px;
+        padding: 13px;
+    }
+
+    .count-title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .dashboard {
+        padding: 10px;
+    }
+
+    .dash-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        max-height: fit-content;
+    }
+
+    .cards-main {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .branch-income {
+        width: 100%;
+        margin: 0;
+    }
+}

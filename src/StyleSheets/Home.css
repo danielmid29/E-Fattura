@@ -1,0 +1,38 @@
+* {
+
+    font-family: "Poppins", sans-serif;
+}
+
+.main-div {
+    background-color: #F3F3F3;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.main-div::-webkit-scrollbar {
+    display: none;
+}
+
+.home-left {
+    width: fit-content;
+}
+
+.home-right {
+    width: 100vw;
+}
+
+.home-left.none,
+.home-top.none {
+    display: none;
+}
+
+
+@media screen and (max-width:1335px) {
+    .home-left {
+        display: none;
+    }
+
+}

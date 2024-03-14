@@ -1,0 +1,722 @@
+.campaign-builder {
+    overflow-y: scroll;
+    height: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.cb-form-container {
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cb-form-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #575d69;
+    padding-bottom: 10px;
+}
+
+.cb-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.cb-form-element {
+    font-size: 14px;
+    width: 50%;
+    color: #575d69;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cb-form-element.tnc {
+    height: fit-content;
+    width: 100%;
+    height: 170px;
+    justify-content: center;
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 20px;
+}
+
+.cb-form-element-name {
+    padding-right: 15px;
+    width: 30%;
+    font-weight: 400;
+    font-size: 12px;
+    color: #575d69;
+    letter-spacing: 1px;
+}
+
+.cb-form.message {
+    font-size: 13px;
+    color: #e95069;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.cb-form-element-name.ci {
+    width: 20%;
+}
+
+.cb-form-element-name.tnc {
+    width: 20%;
+}
+
+.cb-form-drop-down {
+    border-radius: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: #575d6946;
+    padding: 7px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 35px;
+    color: #575d69;
+    font-family: 'Poppins';
+    font-weight: 400;
+    padding-left: 15px;
+    outline: none;
+}
+
+.cb-form-input-text {
+    padding: 10px;
+    height: 35px;
+    width: 50%;
+    outline: none;
+    border-color: #575d6946;
+    border-width: 0px 0 1px 0;
+    border-radius: 0;
+    /* border-radius: 7px; */
+    color: #575d69e0;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.cb-form-input-text.tnc {
+    position: relative;
+    height: 120px;
+    width: 95%;
+    margin-left: 30px;
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+
+}
+
+
+.cb-form-input-text.ci {
+    position: relative;
+    height: 100px;
+    margin-right: 15px;
+    resize: none;
+    background-color: #426dc210;
+}
+
+.cb-form-button {
+    border: 0;
+    border-radius: 7px;
+    height: 35px;
+    padding: 7px 15px;
+    background: linear-gradient(190deg, #ac1fcf 0%, #04a1e4 100%);
+    color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 11.5px;
+    font-family: 'Poppins';
+}
+
+.cb-form-button.icon {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0 7px 7px 0;
+    margin-left: 7px;
+}
+
+.cb-form-button.icon.test {
+    font-size: 13px;
+    width: fit-content;
+}
+
+
+.cb-form-button.sc {
+    padding: 0 10px;
+}
+
+::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+.cb-form-button.file,
+input[type='file'] {
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.cb-form-button.cgi {
+    font-weight: 500;
+    align-self: center;
+    justify-self: center;
+    margin: 0 10px;
+}
+
+.cb-form-button.bs {
+    margin-left: 10px;
+}
+
+.cb-form-buttom-bottom-up {
+    display: flex;
+
+}
+
+.cb-form-bottom-dynamic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cb-form-bottom-dynamic.nt {
+    width: 100%;
+}
+
+.bs {
+    margin-left: 10px;
+}
+
+.cb-form-button.l {
+    width: 130px;
+}
+
+.basecolor {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #575d69;
+    margin-right: 10px;
+}
+
+.color-picker {
+    position: absolute;
+    bottom: 50px;
+    display: none;
+}
+
+.color-picker.visible {
+    display: block;
+}
+
+.send-text {
+    font-size: 13px;
+}
+
+.invoice-table {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.table-header.invoice,
+.table-bottom-div.invoice {
+    color: #FFFFFF;
+    justify-content: flex-end;
+}
+
+.table-header-data.invoice {
+    font-weight: 500;
+}
+
+.table-header-data.invoice.center,
+.table-row-data.invoice.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table-header-data.invoice.bottom {
+    width: 25%;
+
+}
+
+.table-row-data.invoice {
+    text-align: center;
+}
+
+.cb-invoice-total {
+    width: 25%;
+    text-align: center;
+    padding-left: 39%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    border-radius: 7px;
+}
+
+.switch-ci {
+    width: 10%;
+    border-radius: 7px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 7px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 7px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 3px;
+    bottom: 3px;
+    border-radius: 7px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: linear-gradient(40deg, #ac1fcf 0%, #04a1e4 100%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #509FE9;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.cb-form-buttom-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.popup {
+    background: linear-gradient(164deg, #5269c7 0%, #5a04e4 100%);
+    max-width: 550px;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    border-radius: 5px;
+    animation: error-popin .5s ease forwards;
+    display: flex;
+
+}
+
+.popup.hidden {
+    animation: error-popout .5s ease forwards;
+}
+
+.popup-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6px;
+    width: 25px;
+    border-left: 1px #b5b9c2;
+    border-left-style: groove;
+    padding: 10px 10px;
+
+    color: azure;
+}
+
+.popup-icon {
+    background-color: transparent;
+    border: 0;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    cursor: pointer;
+    text-wrap: wrap;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+
+.popup-message {
+    font-size: 13px;
+    padding: 15px;
+    color: azure;
+}
+
+
+.tem-main-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tem-sub-con {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 1.5px 6px #9e9e9ea6;
+    overflow: hidden;
+
+}
+
+@keyframes error-popout {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(10px);
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+@keyframes error-popin {
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        display: flex;
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1450px) {
+
+    .cb-form-element-name {
+        font-size: 12px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .cb-form-input-text,
+    .cb-form-drop-down {
+        height: 30px;
+        transition: 0.2s ease-in-out;
+        font-size: 11px;
+    }
+
+    .cb-form-drop-down {
+        padding: 0;
+        padding-left: 7px;
+        font-size: 12px;
+    }
+
+    .cb-form-button.icon {
+        height: 30px;
+        transition: 0.2s ease-in-out;
+        width: 45px;
+        font-size: 17px;
+        padding: 5px;
+    }
+
+    .cb-form-title {
+        font-size: 17px;
+    }
+
+
+    .cb-form.cb-form.message {
+        font-size: 13px;
+    }
+
+    .tem-sub-con {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1335px) {
+    .campaign-builder {
+        height: 92%;
+    }
+}
+
+
+@media screen and (max-width:1060px) {
+
+    .cb-form-element-name {
+        font-size: 12px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .cb-form-input-text {
+        height: 30px;
+        transition: 0.2s ease-in-out;
+        font-size: 11px;
+    }
+
+
+
+    .cb-form-button.icon {
+        width: 15%;
+    }
+
+    .cb-form.cb-form.message {
+        font-size: 13px;
+    }
+
+
+    .tem-sub-con {
+        width: 55%;
+    }
+
+
+
+    .cb-form-button.icon.test {
+        font-size: 13px;
+        width: 45px;
+    }
+}
+
+
+
+@media screen and (max-width:950px) {
+
+
+    .cb-form-element {
+        width: 90%;
+    }
+
+    .cb-form-input-text,
+    .cb-form-input-text.ci,
+    .cb-form-drop-down {
+        width: 80%;
+        font-size: 11px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .cb-form-button.icon {
+        width: 10%;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .cb-form-input-text.bt {
+        width: 73%;
+        font-size: 11px;
+    }
+
+    .cb-form-input-text.bt,
+    .cb-form-input-text.ci {
+        margin-left: 10px;
+    }
+
+    .cb-form-input-text.ci {
+        width: 85%;
+        margin-right: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+
+
+    .tem-sub-con {
+        width: 80%;
+    }
+}
+
+
+
+
+@media screen and (max-width:660px) {
+
+
+
+    .cb-form-title {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cb-form-element {
+        flex-wrap: wrap;
+        padding-right: 0;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .cb-form-element-name {
+        width: fit-content;
+    }
+
+    .cb-form-input-text,
+    .cb-form-drop-down {
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+    .cb-form-button.icon.test {
+        font-size: 12px;
+        width: 15%;
+    }
+
+
+    .cb-form-input-text.ci {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    .cb-form-input-text.bt {
+        width: 85%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .cb-form-button.icon {
+        width: 13%;
+    }
+
+    .switch-ci {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5px;
+        padding-right: 0;
+        margin-right: 0%;
+        width: fit-content;
+    }
+
+    .switch {
+        height: 15px;
+        width: 25px;
+    }
+
+    .slider:before {
+        height: 9px;
+        width: 9px;
+    }
+
+
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    .cb-form-element.tnc {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .cb-form-input-text.tnc {
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+        font-size: 12px;
+
+    }
+
+    .cb-form.cb-form.message {
+        font-size: 12px;
+    }
+
+    .tem-sub-con {
+        width: 97%;
+    }
+
+    .cb-form-button {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .cb-form-button.icon {
+
+        width: 12%;
+    }
+
+
+    .cb-form-button.icon.test {
+        width: 13%;
+    }
+
+    .cb-form-buttom-bottom {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cb-form-buttom-bottom-up {
+        margin-bottom: 10px;
+    }
+
+    .bs.l {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
