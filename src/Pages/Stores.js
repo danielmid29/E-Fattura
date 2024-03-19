@@ -29,7 +29,7 @@ const TableContainer = () => {
 
   const fetchInvoiceDetails = (searchValue, limit, page_number) => {
     fetch(
-      "http://16.170.159.223/stores?" +
+      "http://103.91.187.65:8000/stores?" +
         new URLSearchParams({
           search_value: searchValue,
           limit: limit,
@@ -50,7 +50,7 @@ const TableContainer = () => {
   };
   const fetchInvoiceDetail = () => {
     fetch(
-      "http://16.170.159.223/stores?" +
+      "http://103.91.187.65:8000/stores?" +
         new URLSearchParams({
           search_value: searchValue,
           limit: limit,
@@ -297,7 +297,7 @@ const Edit = ({
   const handleSubmit = () => {
     console.log(JSON.stringify(json));
 
-    fetch("http://16.170.159.223/stores", {
+    fetch("http://103.91.187.65:8000/stores", {
       method: "POST",
       body: JSON.stringify(json),
     })

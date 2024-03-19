@@ -49,7 +49,7 @@ const TableContainer = () => {
       )
       .join("&");
     console.log(queryString);
-    const urlWithQuery = `http://16.170.159.223/stores?${decodeURIComponent(
+    const urlWithQuery = `http://103.91.187.65:8000/stores?${decodeURIComponent(
       new URLSearchParams(data).toString()
     )}`;
     fetch(urlWithQuery)
@@ -115,7 +115,7 @@ const TableContainer = () => {
         )
         .join("&");
       console.log(queryString);
-      const urlWithQuery = `http://16.170.159.223/feedback?${decodeURIComponent(
+      const urlWithQuery = `http://103.91.187.65:8000/feedback?${decodeURIComponent(
         new URLSearchParams(data).toString()
       )}`;
       console.log(urlWithQuery);

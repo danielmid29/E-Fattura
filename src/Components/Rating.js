@@ -72,7 +72,7 @@ const Rating = ({ rating, setRating, dashboardDetails }) => {
         )
         .join("&");
       console.log(queryString);
-      const urlWithQuery = `http://16.170.159.223/rating?${decodeURIComponent(
+      const urlWithQuery = `http://103.91.187.65:8000/rating?${decodeURIComponent(
         new URLSearchParams(data).toString()
       )}`;
       console.log(urlWithQuery);

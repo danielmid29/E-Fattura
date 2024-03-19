@@ -24,7 +24,7 @@ const Template = ({ data, model, color, secondarycolor }) => {
   const sendFeedback = () => {
     setLoading(false);
     console.log("Send");
-    fetch("http://16.170.159.223/feedback", {
+    fetch("http://103.91.187.65:8000/feedback", {
       method: "POST",
       body: JSON.stringify({
         invoice_fk: data.invoice?.invoice_number,
@@ -67,7 +67,7 @@ const Template = ({ data, model, color, secondarycolor }) => {
     formData.append("mail", mail);
 
     console.log("sending email ");
-    fetch("http://16.170.159.223/send_email", {
+    fetch("http://103.91.187.65:8000/send_email", {
       method: "POST",
       body: formData,
     })
@@ -578,7 +578,7 @@ const Edit = ({ data, handleOpenEdit, openEdit, setOpenEdit, modal }) => {
     } else {
       console.log(JSON.stringify(json));
 
-      fetch("http://16.170.159.223/customers", {
+      fetch("http://103.91.187.65:8000/customers", {
         method: "POST",
         body: JSON.stringify(json),
       })

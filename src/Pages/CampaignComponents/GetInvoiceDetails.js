@@ -9,7 +9,7 @@ const GetDetails = ({ setInvoiceDetails, setError, invoiceDetails }) => {
   const do_get_call = () => {
     if (invoiceId !== "") {
       fetch(
-        "http://16.170.159.223/invoice-api/?" +
+        "http://103.91.187.65:8000/invoice-api/?" +
           new URLSearchParams({
             id: invoiceId,
             api: api,

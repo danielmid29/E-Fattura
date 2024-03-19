@@ -19,7 +19,7 @@ const Dashboard = () => {
   }, []);
 
   const fetchDashboardDetails = () => {
-    fetch("http://16.170.159.223/dashboard")
+    fetch("http://103.91.187.65:8000/dashboard")
       .then(async (response) => {
         const data = await response.json();
         console.log(data);

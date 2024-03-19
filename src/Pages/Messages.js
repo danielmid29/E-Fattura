@@ -28,7 +28,7 @@ const TableContainer = () => {
 
   const fetchMessageDetails = (searchValue, limit, page_number) => {
     fetch(
-      "http://16.170.159.223/message?" +
+      "http://103.91.187.65:8000/message?" +
         new URLSearchParams({
           search_value: searchValue,
           limit: limit,

@@ -29,7 +29,7 @@ const TableContainer = () => {
 
   const fetchCustomerDetails = (searchValue, limit, page_number) => {
     fetch(
-      "http://16.170.159.223/customers?" +
+      "http://103.91.187.65:8000/customers?" +
         new URLSearchParams({
           search_value: searchValue,
           limit: limit,
@@ -51,7 +51,7 @@ const TableContainer = () => {
 
   const fetchCustomerDetail = () => {
     fetch(
-      "http://16.170.159.223/customers?" +
+      "http://103.91.187.65:8000/customers?" +
         new URLSearchParams({
           search_value: searchValue,
           limit: limit,
@@ -325,7 +325,7 @@ const Edit = ({
     } else {
       console.log(JSON.stringify(json));
 
-      fetch("http://16.170.159.223/customers", {
+      fetch("http://103.91.187.65:8000/customers", {
         method: "POST",
         body: JSON.stringify(json),
       })

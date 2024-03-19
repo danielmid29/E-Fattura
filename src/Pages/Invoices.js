@@ -28,7 +28,7 @@ const TableContainer = () => {
 
   const fetchInvoiceDetails = (searchValue, limit, page_number) => {
     fetch(
-      "http://16.170.159.223/invoices?" +
+      "http://103.91.187.65:8000/invoices?" +
         new URLSearchParams({
           search_value: searchValue,
           limit: limit,

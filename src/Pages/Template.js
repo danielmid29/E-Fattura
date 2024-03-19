@@ -32,7 +32,7 @@ const Out_Template = () => {
   const fetchDetails = (id, api) => {
     console.log(id, api);
     fetch(
-      "http://16.170.159.223/invoice?" +
+      "http://103.91.187.65:8000/invoice?" +
         new URLSearchParams({
           id: id,
           api: api,

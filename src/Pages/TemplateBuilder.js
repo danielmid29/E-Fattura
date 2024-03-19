@@ -96,7 +96,7 @@ const TemplateBuilder = () => {
   }, []);
 
   const fetchDetails = () => {
-    fetch("http://16.170.159.223/invoice?id=152&api=ZOHO", {
+    fetch("http://103.91.187.65:8000/invoice?id=152&api=ZOHO", {
       method: "GET",
     })
       .then(async (response) => {
@@ -204,7 +204,7 @@ const TemplateBuilder = () => {
         secondarycolor: secondarycolor,
       };
 
-      fetch("http://16.170.159.223/template", {
+      fetch("http://103.91.187.65:8000/template", {
         method: "POST",
         body: JSON.stringify(template),
       })

@@ -40,7 +40,7 @@ const APISettings = () => {
     };
 
     if (success) {
-      fetch("http://16.170.159.223/invoices-api/add/", {
+      fetch("http://103.91.187.65:8000/invoices-api/add/", {
         method: "POST",
         body: JSON.stringify(body),
       })
@@ -65,7 +65,7 @@ const APISettings = () => {
         })
         .catch(setLoading(true));
     } else {
-      fetch("http://16.170.159.223/invoices-api/test/", {
+      fetch("http://103.91.187.65:8000/invoices-api/test/", {
         method: "POST",
         body: JSON.stringify(body),
       })
@@ -94,7 +94,7 @@ const APISettings = () => {
       whatsapp: whatsapp,
     };
 
-    fetch("http://16.170.159.223/settings", {
+    fetch("http://103.91.187.65:8000/settings", {
       method: "POST",
       body: JSON.stringify(body),
     })
@@ -118,7 +118,7 @@ const APISettings = () => {
   }, []);
 
   const getSettings = () => {
-    fetch("http://16.170.159.223/settings", {
+    fetch("http://103.91.187.65:8000/settings", {
       method: "GET",
     })
       .then(async (response) => {
